@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { navLinks } from "../constant"
 import { logo, menu, close} from '../assets'
 import { Link } from 'react-router-dom'
@@ -10,8 +10,26 @@ const Nav = () => {
 	const handleActive = () => {
 		setActive(!active);
 	}
+
+   const [scrollLength, setScrollLength] = useState(0);
+
+   useEffect(() => {
+     // Function to handle scroll event
+     const handleScroll = () => {
+       const currentScrollLength = window.scrollY;
+       setScrollLength(currentScrollLength);
+     };
+
+     // Add event listener to window for scroll event
+     window.addEventListener("scroll", handleScroll);
+
+     // Cleanup: Remove event listener on unmount
+     return () => {
+       window.removeEventListener("scroll", handleScroll);
+     };
+   }, []);
   return (
-    <div className="fixed w-full z-10">
+    <div className={`fixed w-full z-10 ${scrollLength > 20 ? "bg-[#050316]" : "bg-transparent"}`}>
       <div className="relative w-full ">
         <div className="flex py-3 lg:py-5 justify-between md:px-[40px] px-2 items-center">
           <div>
