@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+	background: linear-gradient(
+		92.23deg,
+		#0f9403 21.43%,
+		#19d308 50.63%,
+		#41e132 100%,
+		#5ee152 117.04%
+	);
+}
+
+.btn:hover {
+	background: linear-gradient(
+		92.23deg,
+		#0f9403 21.43%,
+		#19d308 50.63%,
+		#41e132 100%,
+		#5ee152 117.04%
+	);
+}
+
+.center{
+	position: absolute;
+	left: 50%;
+	right: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.gradient,
+.active {
+	background: linear-gradient(
+		92.23deg,
+		#0f9403 21.43%,
+		#19d308 50.63%,
+		#41e132 100%,
+		#5ee152 117.04%
+	);
+	color: white;
+}
+.green-pink-gradient {
+  background: "#00cea8";
+  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+}
+
+.orange-text-gradient {
+  background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #f12711,
+    #f5af19
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #f12711,
+    #f5af19
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.green-text-gradient {
+  background: #11998e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #11998e,
+    #38ef7d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #11998e,
+    #38ef7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blue-text-gradient {
+  /* background: -webkit-linear-gradient(#eee, #333); */
+  background: #56ccf2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #2f80ed,
+    #56ccf2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #2f80ed,
+    #56ccf2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pink-text-gradient {
+  background: #ec008c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #ec008c,
+    #fc6767
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #ec008c,
+    #fc6767
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav{
+	@apply bg-[#050316]
+}
+
+.black-gradient {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes arrowLive {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
+
+.input{
+	@apply h-12 bg-transparent rounded-xl border border-[#19d308]
+}
+.round{
+	border-top-right-radius: 50%;
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.about{
+	background-image: url('./assets/pp.png') ;
+	
+}
+@layer base {
+	body {
+		@apply font-secondary text-lg leading-8 text-white bg-[#050316];
+	}
+	.h2 {
+		@apply font-primary xs:text-[32px] text-[28px] tracking-[10%] uppercase;
+	}
+	.h3 {
+		@apply font-primary font-semibold text-[26px]  leading-[46px];
+	}
+	.h4{
+		@apply font-semibold leading-[46px] text-[#444444]
+	}
+	.btn {
+		@apply rounded-full font-primary text-white font-medium;
+	}
+	.btn-sm {
+		@apply h-[48px] px-6 text-sm;
+	}
+	.btn-lg {
+		@apply h-[56px] px-10 text-base;
+	}
+	.btn-link {
+		@apply text-base;
+	}
+	.text-gradient {
+		@apply bg-gradient-to-r text-transparent bg-clip-text from-[#0f9403] to-[#41e132] font-bold font-primary hover:from-[#41e132] hover:to-[#0f9403];
+	}
+}
