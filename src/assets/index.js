@@ -17,8 +17,8 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import pPicture from "../assets/pp.png"
-import Ben from "../assets/Ben.jpg"
-import threeD from "../assets/3D.jpg"
+import {Ben} from "../assets/Ben.jpg";
+import {threeD} from "../assets/3D.jpg"
 import ReactP from "../assets/react1.jpg"
 import Grocery from "../assets/grocery.jpg"
 
