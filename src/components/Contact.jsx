@@ -1,5 +1,6 @@
 import React, {useState, useRef} from 'react'
 import emailjs from "@emailjs/browser";
+import { IoCheckmarkDoneCircle, IoCloseCircleSharp } from "react-icons/io5";
 
 const Contact = () => {
 
@@ -9,7 +10,10 @@ const Contact = () => {
       email: "",
       message: "",
     });
+    const formRef = useRef();
     const [loading, setLoading] = useState(false);
+    const [alert, setAlert] = useState(false);
+    const [formError, setFormError] = useState(false);
 
     const handleChange = (e) => {
       const { name, value } = e.target;
@@ -25,7 +29,7 @@ const Contact = () => {
           "service_egl1w0r",
           "template_xmh6y7g",
           {
-            from_name: form.name,
+            from_name: form.firstName,
             to_name: "Iyanda",
             from_email: form.email,
             to_email: "olamidotun225@gmail.com",
@@ -36,17 +40,21 @@ const Contact = () => {
         .then(
           () => {
             setLoading(false);
-            alert("Thank you for reaching out to us");
+            setAlert(true);
+            setTimeout(() => {
+                setAlert(false);
+            }, 5000)
 
             setForm({
-              name: "",
+              firstName: "",
+              lastName: "",
               email: "",
               message: "",
             });
           },
           (error) => {
             setLoading(false);
-            alert("error please retry");
+            setFormError(true);
           }
         );
     };
@@ -58,7 +66,11 @@ const Contact = () => {
       </div>
       <div className="py-20 flex w-full flex-col items-center justify-center px-3">
         <h1 className="h3">Contact Me Here</h1>
-        <form className="mt-10 flex flex-col gap-10">
+        <form
+          className="mt-10 flex flex-col gap-10"
+          onSubmit={handleSubmit}
+          ref={formRef}
+        >
           <div className="flex gap-10 flex-wrap w-full justify-center">
             <div className="input relative w-full">
               <label
@@ -69,7 +81,7 @@ const Contact = () => {
               </label>
               <input
                 type="text"
-                className="w-full h-full bg-transparent border-0 outline-none rounded-xl px-3 py-1"
+                className="w-full h-full bg-transparent border-0 outline-none rounded-xl px-3 py-1 placeholder:text-[13px]"
                 id=""
                 name="firstName"
                 value={form.firstName}
@@ -86,7 +98,7 @@ const Contact = () => {
               </label>
               <input
                 type="text"
-                className="w-full h-full bg-transparent border-0 outline-none rounded-xl px-3 py-1"
+                className="w-full h-full bg-transparent border-0 outline-none rounded-xl px-3 py-1 placeholder:text-[13px]"
                 name="lastName"
                 id=""
                 value={form.lastName}
@@ -104,7 +116,7 @@ const Contact = () => {
             </label>
             <input
               type="email"
-              className="w-full h-full bg-transparent border-0 outline-none rounded-xl px-3 py-1"
+              className="w-full h-full bg-transparent border-0 outline-none rounded-xl px-3 py-1 placeholder:text-[13px]"
               name="email"
               id=""
               value={form.email}
@@ -129,10 +141,24 @@ const Contact = () => {
             ></textarea>
           </div>
           <button className="btn btn-lg mt-10" type="submit">
-            Send
+            {loading ? "Sending" : "Send"}
           </button>
         </form>
       </div>
+      {alert && (
+        <div className="absolute bottom-2 right-5 h-[30px] px-5  bg-black rounded flex gap-5 items-center">
+          {formError ? (
+            <IoCloseCircleSharp className="text-[#d30808]" />
+          ) : (
+            <IoCheckmarkDoneCircle className="text-[#19d308]" />
+          )}
+          {formError ? (
+            <h1 className="text-[#d30808]">Error!, failed to send</h1>
+          ) : (
+            <h1 className="text-[#19d308]">Thank You For Reaching Out to me</h1>
+          )}
+        </div>
+      )}
     </div>
   );
 }
