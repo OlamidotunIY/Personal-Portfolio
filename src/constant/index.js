@@ -12,7 +12,7 @@ import {
   figma,
   threejs,
   threeD,
-  // Ben,
+  Ben,
   ReactP,
   Grocery,
 } from "../assets";
@@ -159,7 +159,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: "",
+      image: Ben,
       source_code_link: "https://github.com/",
       liveLink: "",
       live: true,
