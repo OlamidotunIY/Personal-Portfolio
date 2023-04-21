@@ -146,7 +146,7 @@
 }
 
 .input{
-	@apply h-12 bg-transparent rounded-xl border border-[#19d308]
+	@apply h-14 bg-transparent rounded-xl border border-[#19d308]
 }
 .round{
 	border-top-right-radius: 50%;
