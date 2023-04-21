@@ -17,7 +17,7 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import pPicture from "../assets/pp.png"
-import Ben from "./Ben.png";
+// import Ben from "./Ben.png";
 import threeD from "./3D.jpg"
 import ReactP from "./react1.jpg"
 import Grocery from "./grocery.jpg"
@@ -42,7 +42,7 @@ export {
   typescript,
   threejs,
   pPicture,
-  Ben,
+  // Ben,
   threeD,
   ReactP,
   Grocery,
