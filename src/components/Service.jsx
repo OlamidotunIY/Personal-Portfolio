@@ -26,7 +26,7 @@ const ServiceCard = ({icon, title, desc, index}) => {
           <div className="flex flex-col h-[300px] items-center justify-center gap-6 sm:gap-10">
             <Icon className="text-[40px]" />
             <h1 className="sm:text-[32px] text-[22px] text-black font-bold">{title}</h1>
-            <p className="text-[12px] sm:text-[15px] leading-3 text-justify font-tertiary sm:leading-7">
+            <p className="text-[10px] sm:text-[15px] leading-3 text-justify font-tertiary sm:leading-7">
               {desc}
             </p>
           
