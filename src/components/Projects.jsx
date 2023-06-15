@@ -63,16 +63,7 @@ const ProjectCard = ({
             >
               <FaArrowRight />
             </a>
-          ) : (
-            <a
-                className='mr-10'
-              style={{
-                animation: `arrowLive 1.5s infinite linear`,
-              }}
-            >
-              <FaArrowRight />
-            </a>
-          )}
+          ) : null}
         </div>
         <p className="mt-2 text-secondary text-[14px]">{description}</p>
       </div>

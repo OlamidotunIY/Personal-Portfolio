@@ -1,8 +1,8 @@
-import {motion} from "framer-motion";
-import { fadeIn } from "../utils/variants"
-import { pPicture } from "../assets"
+import { motion } from "framer-motion";
+import { fadeIn } from "../utils/variants";
+import { pPicture } from "../assets";
 const About = () => {
-	return (
+  return (
     <div className="lg:px-10 w-full mb-10 mt-10" id="about">
       <div className="lg:px-[100px] md:px-5 px-5">
         <div className="w-full text-center relative">
@@ -19,11 +19,11 @@ const About = () => {
               viewport={{ once: false, amount: 0.7 }}
             >
               Welcome to my portfolio website. My name is{" "}
-              <strong className="h3">IYANDA OLAMIDOTUN KOLAPO</strong>, and I am an
-              undergraduate student at the University of Agriculture Abeokuta,
-              studying statistics. I am currently in my final year, and I am
-              passionate about using data to derive insights that can be used to
-              solve real-world problems.
+              <strong className="h3">IYANDA OLAMIDOTUN KOLAPO</strong>, and I am
+              an undergraduate student at the University of Agriculture
+              Abeokuta, studying statistics. I am currently in my final year,
+              and I am passionate about using data to derive insights that can
+              be used to solve real-world problems.
             </motion.p>
             <motion.p
               className="text-justify text-[25px] leading-10"
@@ -48,8 +48,41 @@ const About = () => {
               I am also currently enrolled in the ALX Software Engineering
               program, where I am expanding my skillset to include web
               development. I am proficient in HTML, CSS, JavaScript, Bootstrap,
-              and SASS, React and React Native. I am also familiar with Node.js, Express.js, MongoDB, and MySQL.
-              I can create responsive websites and web applications that are user-friendly and visually appealing. I am also familiar with version control using Git and GitHub. I can create re-useable components and implement state management using Redux. I can also create mobile applications using React Native. I am present working as an intern at{" "} <a href="" target="_blank" rel="noopener noreferrer" className="text-gradient">HiCircle</a> Where i am responsible for implementing new function to the Mobile Application and also maintain the frontend aspect of the Application.
+              and SASS, React and React Native. I am also familiar with Node.js,
+              Express.js, MongoDB, and MySQL.
+            </motion.p>
+            <motion.p
+              className="text-justify text-[25px] leading-10"
+              variants={fadeIn("right", 0.4)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+            >
+              I can create responsive websites and web applications that are
+              user-friendly and visually appealing. I am also familiar with
+              version control using Git and GitHub. I can create re-useable
+              components and implement state management using Redux. I can also
+              create mobile applications using React Native.
+            </motion.p>
+            <motion.p
+              className="text-justify text-[25px] leading-10"
+              variants={fadeIn("right", 0.5)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+            >
+              I am presently working as an intern at{" "}
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gradient"
+              >
+                HiCircle
+              </a>{" "}
+              Where i am responsible for implementing new function to the Mobile
+              Application and also maintain the frontend aspect of the
+              Application.
             </motion.p>
             <motion.p
               className="text-justify text-[25px] leading-10"
