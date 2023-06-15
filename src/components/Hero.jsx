@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="sm:leading-[46px] leading-[30px] lg:px-[120px]">
           <motion.h1
             className="sm:text-[23px]"
-            variants={fadeIn("up", 0.3)}
+            variants={fadeIn("up", 0.1)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
@@ -26,7 +26,7 @@ const Hero = () => {
           </motion.h1>
           <motion.h2
             className="h4 text-[18px] sm:text-[24px] capitalize leading-[30px] sm:leading-[46px] "
-            variants={fadeIn("up", 0.5)}
+            variants={fadeIn("up", 0.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
@@ -35,7 +35,7 @@ const Hero = () => {
           </motion.h2>
           <motion.h2
             className="h4 text-[18px] sm:text-[24px] capitalize leading-[30px] sm:leading-[46px]"
-            variants={fadeIn("up", 0.7)}
+            variants={fadeIn("up", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
@@ -44,7 +44,7 @@ const Hero = () => {
           </motion.h2>
           <motion.p
             className="text-[16px] sm:text-[18px] max-w-[800px] capitalize"
-            variants={fadeIn("up", 0.8)}
+            variants={fadeIn("up", 0.4)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
@@ -56,7 +56,7 @@ const Hero = () => {
           </motion.p>
           <motion.button
             className="btn md:btn-lg btn-sm mt-8"
-            variants={fadeIn("up", 1.0)}
+            variants={fadeIn("up", 0.5)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
@@ -68,7 +68,7 @@ const Hero = () => {
         {/* Social Icons */}
         <motion.div
           className="flex lg:flex-col gap-10 items-center max-w-[50px] lg:fixed bottom-4 ml-4"
-          variants={fadeIn("left", 1.2)}
+          variants={fadeIn("left", 0.6)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}

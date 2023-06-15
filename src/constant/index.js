@@ -13,8 +13,9 @@ import {
   threejs,
   threeD,
   Ben,
-  ReactP,
   Grocery,
+  ReactNative,
+  patrix,
 } from "../assets";
   import { FaDesktop, FaHammer, FaCartArrowDown } from "react-icons/fa";
   import { TbSpeakerphone } from "react-icons/tb";
@@ -98,7 +99,7 @@ import {
     {
       name: "JavaScript Projects",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "This is a collection of simple JavaScript projects that I have worked on, it includes a Grocery List, a React Accordion and so on.",
       tags: [
         {
           name: "HTML",
@@ -114,37 +115,37 @@ import {
         },
       ],
       image: Grocery,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/OlamidotunIY/JavaScript_Project",
       liveLink: "",
       live: false,
     },
     {
-      name: "React Projects",
+      name: "React Native Projects",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "This is a collection of React Native projects that I have worked on, it includes a mobile app for a restaurant(RUNU APP)",
       tags: [
         {
-          name: "React",
+          name: "React Native",
           color: "blue-text-gradient",
         },
         {
-          name: "CSS",
+          name: "React",
           color: "green-text-gradient",
         },
         {
-          name: "JavaScript",
+          name: "expo",
           color: "pink-text-gradient",
         },
       ],
-      image: ReactP,
-      source_code_link: "https://github.com/",
+      image: ReactNative,
+      source_code_link: "https://github.com/OlamidotunIY/ReactNative",
       liveLink: "",
       live: false,
     },
     {
       name: "Ben Alden Portfolio",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "This is a personal portfolio website that allows users to view the services offered, and Project Templates. it was built using React, Tailwind, and Framer Motion.",
       tags: [
         {
           name: "React",
@@ -160,14 +161,14 @@ import {
         },
       ],
       image: Ben,
-      source_code_link: "https://github.com/",
-      liveLink: "",
+      source_code_link: "https://github.com/OlamidotunIY/ben-aiden_portfolio-website",
+      liveLink: "https://ben-aiden-portfolio-website.vercel.app",
       live: true,
     },
     {
       name: "3D Portfolio",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "This is a 3D personal portfolio website that allows users to view the services offered, and Work Timeline. it was built using React, Tailwind, and threeJs.",
       tags: [
         {
           name: "React",
@@ -183,8 +184,31 @@ import {
         },
       ],
       image: threeD,
-      source_code_link: "https://github.com/",
-      liveLink: "",
+      source_code_link: "https://github.com/OlamidotunIY/3D_portfolio_website",
+      liveLink: "https://3-d-portfolio-website-eight.vercel.app",
+      live: true,
+    },
+    {
+      name: "Patrix Clone",
+      description:
+        "This project is a clone of the Patrix website. It is a portfolio website that allows users to view the services offered by the company. it was built using HTML, CSS, and Bootstrap.",
+      tags: [
+        {
+          name: "html",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Bootstrap",
+          color: "green-text-gradient",
+        },
+        {
+          name: "JavaScript",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: patrix,
+      source_code_link: "https://github.com/OlamidotunIY/3D_portfolio_website",
+      liveLink: "https://patrick-clone.netlify.app",
       live: true,
     },
   ];
@@ -199,6 +223,11 @@ import {
       icon: FaHammer,
       title: "Web Development",
       desc: "Building and maintaining websites and web applications and the use of programming languages such as HTML, CSS, JavaScript, and other technologies to create interactive and dynamic websites",
+    },
+    {
+      icon: FaHammer,
+      title: "Mobile Development",
+      desc: "Building and maintaining mobile applications and the use of programming languages such as React Native, JavaScript, and other technologies to create interactive and dynamic mobile applications",
     },
     {
       icon: TbSpeakerphone,

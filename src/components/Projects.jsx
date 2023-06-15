@@ -18,7 +18,7 @@ const ProjectCard = ({
   live,
 }) => (
   <motion.div
-    variants={fadeIn("right", 0.3 * index)}
+    variants={fadeIn("right", 0.1 * index)}
     initial="hidden"
     whileInView={"show"}
     viewport={{ once: false, amount: 0.7 }}
@@ -29,7 +29,7 @@ const ProjectCard = ({
         scale: 1,
         speed: 450,
       }}
-      className=" bg-black p-5 rounded-2xl sm:w-[350px] w-full"
+      className=" bg-black p-5 rounded-2xl sm:w-[350px] w-full min-h-[430px]"
     >
       <div className="relative w-full h-[230px]">
         <img
@@ -96,7 +96,7 @@ const Projects = () => {
           <div className="w-[70px] h-[1px] center bg-white top-10"></div>
         </div>
         <div className="py-20">
-          <div className='flex flex-wrap justify-center items-center gap-10'>
+          <div className='flex flex-wrap justify-center items-center gap-10 '>
             {projects.map((project, index) => (
               <ProjectCard key={index} {...project} index={index} />
             ))}

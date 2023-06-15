@@ -7,7 +7,7 @@ const SkillCard = ({name, icon, index}) => {
     return (
       <motion.div
         className="flex flex-col items-center justify-center md:gap-5 gap-2 cursor-pointer gradient md:min-w-[120px] min-w-[70px] pt-5 pb-2 round"
-        variants={fadeIn("up", 0.3 * (index + 1))}
+        variants={fadeIn("up", 0.1 * (index + 1))}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.7 }}

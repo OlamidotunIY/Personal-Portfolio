@@ -10,7 +10,7 @@ const ServiceCard = ({icon, title, desc, index}) => {
     const Icon = icon;
     return (
       <motion.div
-        variants={fadeIn("right", 0.3 * index)}
+        variants={fadeIn("right", 0.1 * index)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.7 }}
@@ -39,7 +39,7 @@ const ServiceCard = ({icon, title, desc, index}) => {
 
 const Service = () => {
   return (
-    <div id="services" className="mt-20 mb-10 lg:px-20 px-10">
+    <div id="services" className="mt-20 mb-10 lg:px-24 px-10">
       <div>
         <div className="w-full text-center relative">
           <h1 className="text-gradient h2">Services</h1>

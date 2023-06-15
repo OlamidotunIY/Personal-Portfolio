@@ -9,25 +9,25 @@ const About = () => {
           <h1 className="text-gradient h2">About</h1>
           <div className="w-[70px] h-[1px] center bg-white top-10"></div>
         </div>
-        <div className="mt-14 flex flex-col md:flex-row gap-10 py-20">
-          <div className="flex-1 max-w-[700px]">
+        <div className="mt-14 flex py-20">
+          <div className="flex flex-col gap-10 max-w-[1000px]">
             <motion.p
-              className="text-justify"
-              variants={fadeIn("right", 0.3)}
+              className="text-justify text-[25px] leading-10"
+              variants={fadeIn("right", 0.1)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
             >
               Welcome to my portfolio website. My name is{" "}
-              <strong>IYANDA OLAMIDOTUN KOLAPO</strong>, and I am an
+              <strong className="h3">IYANDA OLAMIDOTUN KOLAPO</strong>, and I am an
               undergraduate student at the University of Agriculture Abeokuta,
               studying statistics. I am currently in my final year, and I am
               passionate about using data to derive insights that can be used to
               solve real-world problems.
             </motion.p>
             <motion.p
-              className="text-justify"
-              variants={fadeIn("right", 0.4)}
+              className="text-justify text-[25px] leading-10"
+              variants={fadeIn("right", 0.2)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
@@ -39,8 +39,8 @@ const About = () => {
               accurate and insightful analysis.
             </motion.p>
             <motion.p
-              className="text-justify"
-              variants={fadeIn("right", 0.5)}
+              className="text-justify text-[25px] leading-10"
+              variants={fadeIn("right", 0.3)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
@@ -48,13 +48,12 @@ const About = () => {
               I am also currently enrolled in the ALX Software Engineering
               program, where I am expanding my skillset to include web
               development. I am proficient in HTML, CSS, JavaScript, Bootstrap,
-              and SASS, and I am continuously learning and exploring new
-              technologies to stay up-to-date with the latest trends and
-              developments in the field.
+              and SASS, React and React Native. I am also familiar with Node.js, Express.js, MongoDB, and MySQL.
+              I can create responsive websites and web applications that are user-friendly and visually appealing. I am also familiar with version control using Git and GitHub. I can create re-useable components and implement state management using Redux. I can also create mobile applications using React Native. I am present working as an intern at{" "} <a href="" target="_blank" rel="noopener noreferrer" className="text-gradient">HiCircle</a> Where i am responsible for implementing new function to the Mobile Application and also maintain the frontend aspect of the Application.
             </motion.p>
             <motion.p
-              className="text-justify"
-              variants={fadeIn("right", 0.6)}
+              className="text-justify text-[25px] leading-10"
+              variants={fadeIn("right", 0.4)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
@@ -65,21 +64,6 @@ const About = () => {
               project.
             </motion.p>
           </div>
-          <motion.div
-            variants={fadeIn("left", 0.5)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
-            className="flex-1 lg:flex items-center md:justify-end justify-center hidden"
-          >
-            <div className="">
-              <img
-                src={pPicture}
-                alt=""
-                className="lg:w-[400px] lg:h-[450px] border-8 border-[#41e132] rounded-2xl grayscale hover:grayscale-0 transition-all"
-              />
-            </div>
-          </motion.div>
         </div>
       </div>
     </div>

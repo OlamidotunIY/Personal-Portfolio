@@ -21,6 +21,8 @@ import Ben from "./BenA.png";
 import threeD from "./3D.png";
 import ReactP from "./accordion.png"
 import Grocery from "./grocery.png"
+import ReactNative from "./runu3.png"
+import patrix from "./patrix.png"
 
 
 export {
@@ -46,4 +48,6 @@ export {
   threeD,
   ReactP,
   Grocery,
+  ReactNative,
+  patrix,
 };
