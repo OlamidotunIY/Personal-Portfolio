@@ -1,8 +1,7 @@
-import React from 'react'
-import { FaGithub, FaTwitter, FaLinkedin} from 'react-icons/fa';
-import { motion } from 'framer-motion'
-import { fadeIn } from '../utils/variants'
-
+import React from "react";
+import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { fadeIn } from "../utils/variants";
 
 const Hero = () => {
   return (
@@ -61,7 +60,9 @@ const Hero = () => {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
           >
-            Download CV
+            <a href="https://drive.google.com/file/d/1enb1_vUFobRMkgOZwVgzpm3vu28IpRrI/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+              Download CV
+            </a>
           </motion.button>
         </div>
 
@@ -74,13 +75,13 @@ const Hero = () => {
           viewport={{ once: false, amount: 0.7 }}
         >
           <div className="flex lg:flex-col lg:gap-5 gap-8 mt-10">
-            <a href="" className="text-white text-decoration-none">
+            <a href="https://github.com/OlamidotunIY" target="_blank" rel="noopener noreferrer"  className="text-white text-decoration-none">
               <FaGithub className="md:w-[30px] md:h-[30px] w-[20px] h-[20px] hover:text-[#0f9403] hover:scale-[1.2] transition-all cursor-pointer" />
             </a>
-            <a href="" className="text-white text-decoration-none">
+            <a href="" target="_blank" rel="noopener noreferrer" className="text-white text-decoration-none">
               <FaTwitter className="md:w-[30px] md:h-[30px] w-[20px] h-[20px] hover:text-[#0f9403] hover:scale-[1.2] transition-all cursor-pointer" />
             </a>
-            <a href="" className="text-white text-decoration-none">
+            <a href="https://www.linkedin.com/in/iyanda-olamidotun-531399257/" target="_blank" rel="noopener noreferrer" className="text-white text-decoration-none">
               <FaLinkedin className="md:w-[30px] md:h-[30px] w-[20px] h-[20px] hover:text-[#0f9403] hover:scale-[1.2] transition-all cursor-pointer" />
             </a>
           </div>
@@ -89,6 +90,6 @@ const Hero = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Hero
+export default Hero;

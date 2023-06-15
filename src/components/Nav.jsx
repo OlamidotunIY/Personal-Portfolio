@@ -1,35 +1,39 @@
-import React, { useState, useEffect } from 'react'
-import { navLinks } from "../constant"
-import { logo, menu, close} from '../assets'
-import { Link } from 'react-router-dom'
+import React, { useState, useEffect } from "react";
+import { navLinks } from "../constant";
+import { logo, menu, close } from "../assets";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
-	const [active, setActive] = useState(false);
-	const [linkActive, setLinkActive] = useState("")
+  const [active, setActive] = useState(false);
+  const [linkActive, setLinkActive] = useState("");
 
-	const handleActive = () => {
-		setActive(!active);
-	}
+  const handleActive = () => {
+    setActive(!active);
+  };
 
-   const [scrollLength, setScrollLength] = useState(0);
+  const [scrollLength, setScrollLength] = useState(0);
 
-   useEffect(() => {
-     // Function to handle scroll event
-     const handleScroll = () => {
-       const currentScrollLength = window.scrollY;
-       setScrollLength(currentScrollLength);
-     };
+  useEffect(() => {
+    // Function to handle scroll event
+    const handleScroll = () => {
+      const currentScrollLength = window.scrollY;
+      setScrollLength(currentScrollLength);
+    };
 
-     // Add event listener to window for scroll event
-     window.addEventListener("scroll", handleScroll);
+    // Add event listener to window for scroll event
+    window.addEventListener("scroll", handleScroll);
 
-     // Cleanup: Remove event listener on unmount
-     return () => {
-       window.removeEventListener("scroll", handleScroll);
-     };
-   }, []);
+    // Cleanup: Remove event listener on unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <div className={`fixed w-full z-10 ${scrollLength > 20 ? "bg-[#050316]" : "bg-transparent"}`}>
+    <div
+      className={`fixed w-full z-10 ${
+        scrollLength > 20 ? "bg-[#050316]" : "bg-transparent"
+      }`}
+    >
       <div className="relative w-full ">
         <div className="flex py-3 lg:py-5 justify-between md:px-[40px] px-2 items-center">
           <div>
@@ -74,7 +78,11 @@ const Nav = () => {
                 </li>
               </ul>
               <div>
-                <button className="btn btn-sm">Download CV</button>
+                <button className="btn btn-sm">
+                  <a href="https://drive.google.com/file/d/1enb1_vUFobRMkgOZwVgzpm3vu28IpRrI/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+                    Download CV
+                  </a>
+                </button>
               </div>
             </div>
             <div>
@@ -110,6 +118,6 @@ const Nav = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Nav
+export default Nav;
