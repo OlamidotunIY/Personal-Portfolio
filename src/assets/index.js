@@ -23,6 +23,8 @@ import ReactP from "./accordion.png"
 import Grocery from "./grocery.png"
 import ReactNative from "./runu3.png"
 import patrix from "./patrix.png"
+import sociopedia from './sociopedia.png'
+import LoginAuth from './LoginAuth.png'
 
 
 export {
@@ -50,4 +52,6 @@ export {
   Grocery,
   ReactNative,
   patrix,
+  sociopedia,
+  LoginAuth
 };

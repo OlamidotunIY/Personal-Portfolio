@@ -30,7 +30,7 @@ const Hero = () => {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
           >
-            A frontend software developer
+            A MERN Stack developer || React Native developer
           </motion.h2>
           <motion.h2
             className="h4 text-[18px] sm:text-[24px] capitalize leading-[30px] sm:leading-[46px]"
@@ -48,8 +48,7 @@ const Hero = () => {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
           >
-            i am proefficient in HTML, CSS, JavaScript, Boothstrap, SASS,
-            Tailwind, React, three.js and framer motion. I'm presently enrolled
+            i am proefficient in React js, React Native, JavaScript, Node Js, Express js and MongoDB. I'm presently enrolled
             in the ALX software engneering program to increase my knowlegde and
             become a full stack developer
           </motion.p>

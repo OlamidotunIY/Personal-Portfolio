@@ -16,6 +16,8 @@ import {
   Grocery,
   ReactNative,
   patrix,
+  sociopedia,
+  LoginAuth
 } from "../assets";
   import { FaDesktop, FaHammer, FaCartArrowDown } from "react-icons/fa";
   import { TbSpeakerphone } from "react-icons/tb";
@@ -209,6 +211,75 @@ import {
       image: patrix,
       source_code_link: "https://github.com/OlamidotunIY/3D_portfolio_website",
       liveLink: "https://patrick-clone.netlify.app",
+      live: true,
+    },
+    {
+      name: "Socio Pedia",
+      description:
+        "This is a MERN stack application, it is a social media app that allows users to post interesting events that happened in their lives, Login and Sign Up features, follow other users and also view each others profiles. it was built using React, Tailwind, MongoDB, Express and Node Js.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Node js",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: sociopedia,
+      source_code_link: "",
+      liveLink: "",
+      live: true,
+    },
+    {
+      name: "MERN AUTH",
+      description:
+        "This is a simple MERN stack application that allows users to Login and Sign Up, it was built using React, Tailwind, MongoDB, Express and Node Js.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Node js",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: LoginAuth,
+      source_code_link: "",
+      liveLink: "",
+      live: true,
+    },
+    {
+      name: "Gtext Holdings",
+      description:
+        "This is a react native application, i converted an already existing website to a mobile application and add an E-commarce, signIn/Login functionality, it was built using React Native, Tailwind, MongoDB, Express and Node Js.",
+      tags: [
+        {
+          name: "react native",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Node js",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: sociopedia,
+      source_code_link: "",
+      liveLink: "",
       live: true,
     },
   ];

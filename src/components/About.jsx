@@ -19,24 +19,10 @@ const About = () => {
               viewport={{ once: false, amount: 0.7 }}
             >
               Welcome to my portfolio website. My name is{" "}
-              <strong className="h3">IYANDA OLAMIDOTUN KOLAPO</strong>, and I am
-              an undergraduate student at the University of Agriculture
-              Abeokuta, studying statistics. I am currently in my final year,
-              and I am passionate about using data to derive insights that can
-              be used to solve real-world problems.
-            </motion.p>
-            <motion.p
-              className="text-justify text-[25px] leading-10"
-              variants={fadeIn("right", 0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-            >
-              As a data analyst, I have experience using SPSS, R, and Excel to
-              analyze data and generate actionable insights. My ability to
-              manipulate and analyze data has enabled me to develop a deep
-              understanding of statistical concepts, which I leverage to provide
-              accurate and insightful analysis.
+              <strong className="h3">IYANDA OLAMIDOTUN KOLAPO</strong>, and i am a Full Stack Mern Developer, i create responsive web applications and mobile applications that are user-friendly and visually appealing. 
+              I am also familiar with version control using Git and GitHub. 
+              I can create re-useable components and implement state management using Redux. 
+              I can also create mobile applications using React Native.
             </motion.p>
             <motion.p
               className="text-justify text-[25px] leading-10"
@@ -53,25 +39,12 @@ const About = () => {
             </motion.p>
             <motion.p
               className="text-justify text-[25px] leading-10"
-              variants={fadeIn("right", 0.4)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-            >
-              I can create responsive websites and web applications that are
-              user-friendly and visually appealing. I am also familiar with
-              version control using Git and GitHub. I can create re-useable
-              components and implement state management using Redux. I can also
-              create mobile applications using React Native.
-            </motion.p>
-            <motion.p
-              className="text-justify text-[25px] leading-10"
               variants={fadeIn("right", 0.5)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
             >
-              I am presently working as an intern at{" "}
+              I am worked as an intern at{" "}
               <a
                 href=""
                 target="_blank"

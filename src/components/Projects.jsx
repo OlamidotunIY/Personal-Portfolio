@@ -29,7 +29,7 @@ const ProjectCard = ({
         scale: 1,
         speed: 450,
       }}
-      className=" bg-black p-5 rounded-2xl sm:w-[350px] w-full min-h-[430px]"
+      className=" bg-black p-5 rounded-2xl sm:w-[350px] w-full min-h-[530px]"
     >
       <div className="relative w-full h-[230px]">
         <img
@@ -65,7 +65,7 @@ const ProjectCard = ({
             </a>
           ) : null}
         </div>
-        <p className="mt-2 text-secondary text-[14px]">{description}</p>
+        <p className="mt-2 text-secondary text-[14px] max-h-[150px] overflow-hidden">{description}</p>
       </div>
       <div className="mt-4 flex flex-wrap gap-2">
         {tags.map((tag) => (
@@ -87,7 +87,7 @@ const Projects = () => {
           <div className="w-[70px] h-[1px] center bg-white top-10"></div>
         </div>
         <div className="py-20">
-          <div className='flex flex-wrap justify-center items-center gap-10 '>
+          <div className='flex flex-wrap justify-center items-center gap-10 max'>
             {projects.map((project, index) => (
               <ProjectCard key={index} {...project} index={index} />
             ))}
